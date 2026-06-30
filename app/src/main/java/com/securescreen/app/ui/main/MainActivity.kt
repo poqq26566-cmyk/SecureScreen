@@ -228,11 +228,11 @@ class MainActivity : AppCompatActivity() {
             5
         )
 
-        applyStatusChip(binding.usageAccessChip, "Usage Access", usageGranted)
-        applyStatusChip(binding.batteryOptimizationChip, "Battery", batteryIgnored)
-        applyStatusChip(binding.accessibilityChip, "Accessibility", accessibilityEnabled)
-        applyStatusChip(binding.notificationChip, "Notifications", notificationGranted)
-        applyStatusChip(binding.exactAlarmChip, "Exact Alarm", exactAlarmAllowed)
+        applyStatusChip(binding.usageAccessChip, "使用情况访问", usageGranted)
+        applyStatusChip(binding.batteryOptimizationChip, "电池", batteryIgnored)
+        applyStatusChip(binding.accessibilityChip, "无障碍", accessibilityEnabled)
+        applyStatusChip(binding.notificationChip, "通知", notificationGranted)
+        applyStatusChip(binding.exactAlarmChip, "精确闹钟", exactAlarmAllowed)
 
         binding.managePermissionsButton.visibility = if (grantedCount < 5) {
             android.view.View.VISIBLE
